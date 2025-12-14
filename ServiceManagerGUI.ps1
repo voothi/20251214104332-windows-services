@@ -53,9 +53,34 @@ Add-Type -AssemblyName PresentationFramework
             <Setter Property="Margin" Value="5"/>
         </Style>
         <Style TargetType="TabItem">
-            <Setter Property="Background" Value="#252526"/>
-            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#2d2d30"/>
+            <Setter Property="Foreground" Value="#cccccc"/>
             <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabItem">
+                        <Border Name="Border" Background="{TemplateBinding Background}" BorderBrush="#3e3e42" BorderThickness="1,1,1,0" Margin="2,0,2,0" Padding="12,6">
+                            <ContentPresenter x:Name="ContentSite" VerticalAlignment="Center" HorizontalAlignment="Center" ContentSource="Header"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#1e1e1e"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="#007acc"/>
+                                <Setter TargetName="Border" Property="BorderThickness" Value="0,2,0,0"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="False">
+                                <Setter TargetName="Border" Property="Background" Value="#2d2d30"/>
+                                <Setter Property="Foreground" Value="#999999"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#3e3e42"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
         
         <!-- Style for Diff Rows -->
