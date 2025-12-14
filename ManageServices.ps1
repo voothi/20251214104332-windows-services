@@ -17,7 +17,7 @@ if ($ServiceNames.Count -eq 1 -and $ServiceNames[0] -match ',') {
 
 # Function to get current date for filename
 function Get-Timestamp {
-    return Get-Date -Format "yyyyMMdd_HHmmss"
+    return Get-Date -Format "yyyyMMddHHmmss"
 }
 
 # --- Export Mode ---
@@ -29,7 +29,7 @@ if ($Mode -eq "Export") {
             New-Item -ItemType Directory -Path $outputDir | Out-Null
         }
         $timestamp = Get-Timestamp
-        $ConfigPath = "$outputDir\ServicesConfig_$timestamp.json"
+        $ConfigPath = "$outputDir\$timestamp-windows-services.json"
     }
 
     Write-Host "Exporting service states to '$ConfigPath'..." -ForegroundColor Cyan

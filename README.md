@@ -37,7 +37,7 @@ Save the state of services to a JSON file.
 ```
 
 -   **-ServiceNames**: (Optional) List of service names to export. If omitted, ALL services are exported.
--   **Output**: A file named `ServicesConfig_TIMESTAMP.json` in the `.\out` directory.
+-   **Output**: A file named `TIMESTAMP-windows-services.json` in the `.\out` directory.
 
 ### Restoring Services (Load)
 Apply a configuration from a JSON file.
