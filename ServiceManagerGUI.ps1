@@ -212,7 +212,7 @@ $btnRestore.Add_Click({
 
         $result = [System.Windows.MessageBox]::Show("Are you sure you want to RESTORE this configuration?`nRunning services may be stopped.", "Confirm Restore", 4, 32)
         if ($result -eq 'Yes') {
-            Start-Process powershell -ArgumentList "-NoExit -ExecutionPolicy Bypass -File `"$PSScriptRoot\ManageServices.ps1`" -Mode Restore -ConfigPath `"$global:currentFilePath`""
+            Start-Process powershell -ArgumentList "-NoExit -ExecutionPolicy Bypass -File `"$PSScriptRoot\ManageServices.ps1`" -Mode Restore -ConfigPath `"$global:currentFilePath`"" -Verb RunAs
         }
     })
 

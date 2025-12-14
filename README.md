@@ -39,6 +39,17 @@ Save the state of services to a JSON file.
 -   **-ServiceNames**: (Optional) List of service names to export. If omitted, ALL services are exported.
 -   **Output**: A file named `TIMESTAMP-windows-services.json` in the `.\out` directory.
 
+### GUI Interface (ServiceManagerGUI)
+For a visual interface to manage configurations:
+
+**Command:**
+```powershell
+.\ServiceManagerGUI.ps1
+```
+
+-   **Features**: Load JSON, Batch Edit (Select Multiple -> Apply), Save, and Restore.
+-   **Note**: The "Restore" button will prompt for Administrator privileges to apply changes.
+
 ### Restoring Services (Load)
 Apply a configuration from a JSON file.
 
