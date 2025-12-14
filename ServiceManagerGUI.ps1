@@ -217,8 +217,8 @@ Add-Type -AssemblyName PresentationFramework
 
                 <!-- Bottom Bar: Save/Restore -->
                 <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
-                    <Button Name="btnSaveConfig" Content="💾 Save Config As..."/>
-                    <Button Name="btnRestore" Content="🚀 RESTORE CONFIGURATION" Background="#2a9d8f" FontWeight="Bold"/>
+                    <Button Name="btnSaveConfig" Content="💾 Save Config As..." Background="#388E3C"/>
+                    <Button Name="btnRestore" Content="🚀 RESTORE CONFIGURATION" Background="#D32F2F" FontWeight="Bold"/>
                 </StackPanel>
             </Grid>
         </TabItem>
