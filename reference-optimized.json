@@ -1,0 +1,86 @@
+[
+    {
+        "Name": "DiagTrack",
+        "DisplayName": "Connected User Experiences and Telemetry",
+        "Status": "Stopped",
+        "StartType": "Disabled",
+        "IsTrigger": false
+    },
+    {
+        "Name": "SysMain",
+        "DisplayName": "SysMain",
+        "Status": "Stopped",
+        "StartType": "Disabled",
+        "IsTrigger": false
+    },
+    {
+        "Name": "MapsBroker",
+        "DisplayName": "Downloaded Maps Manager",
+        "Status": "Stopped",
+        "StartType": "Disabled",
+        "IsTrigger": false
+    },
+    {
+        "Name": "XblAuthManager",
+        "DisplayName": "Xbox Live Auth Manager",
+        "Status": "Stopped",
+        "StartType": "Disabled",
+        "IsTrigger": false
+    },
+    {
+        "Name": "XblGameSave",
+        "DisplayName": "Xbox Live Game Save",
+        "Status": "Stopped",
+        "StartType": "Disabled",
+        "IsTrigger": true
+    },
+    {
+        "Name": "XboxNetApiSvc",
+        "DisplayName": "Xbox Live Networking Service",
+        "Status": "Stopped",
+        "StartType": "Disabled",
+        "IsTrigger": false
+    },
+    {
+        "Name": "WMPNetworkSvc",
+        "DisplayName": "Windows Media Player Network Sharing Service",
+        "Status": "Stopped",
+        "StartType": "Disabled",
+        "IsTrigger": false
+    },
+    {
+        "Name": "Fax",
+        "DisplayName": "Fax",
+        "Status": "Stopped",
+        "StartType": "Disabled",
+        "IsTrigger": false
+    },
+    {
+        "Name": "RetailDemo",
+        "DisplayName": "Retail Demo Service",
+        "Status": "Stopped",
+        "StartType": "Disabled",
+        "IsTrigger": false
+    },
+    {
+        "Name": "WerSvc",
+        "DisplayName": "Windows Error Reporting Service",
+        "Status": "Stopped",
+        "StartType": "Manual",
+        "IsTrigger": true
+    },
+    {
+        "Name": "Spooler",
+        "DisplayName": "Print Spooler",
+        "Status": "Stopped",
+        "StartType": "Manual",
+        "IsTrigger": false
+    },
+    {
+        "Name": "WalletService",
+        "DisplayName": "WalletService",
+        "Status": "Stopped",
+        "StartType": "Manual",
+        "IsTrigger": false
+    }
+]
