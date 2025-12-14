@@ -73,12 +73,12 @@ Apply a configuration from a JSON file.
 Want to optimize your services but don't know which ones to disable?
 We've included a guide with a prompt you can use with AI assistants (like ChatGPT/Gemini).
 
-👉 **[Read the AI Optimization Guide](ai-optimization-guide.md)**
+👉 **[Read the AI Optimization Guide](docs/ai-optimization-guide.md)**
 
 [Back to Top](#table-of-contents)
 
 ## Release Notes
-See [release-notes.md](release-notes.md).
+See [release-notes.md](docs/release-notes.md).
 
 ## License
 [MIT](LICENSE)
